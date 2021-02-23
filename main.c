@@ -1,5 +1,6 @@
+
 #include <stdio.h>
-#include "math.c"
+#include "math.h"
 
 int main() {
     float number1;
@@ -12,33 +13,33 @@ int main() {
 
         switch (operator)
         {
-        case '+':
-            printf("Result: %.2f", add(number1,number2));
-            break;
-        
-        case '-':
-            printf("Result: %.2f", subtract(number1,number2));
-            break;
+            case '+':
+                printf("Result: %.2f", add(number1,number2));
+                break;
 
-        case '*':
-            printf("Result: %.2f", multiply(number1,number2));
-            break;
+            case '-':
+                printf("Result: %.2f", subtract(number1,number2));
+                break;
 
-        case '/':
-            printf("Result: %.2f", divide(number1,number2));
-            break;
+            case '*':
+                printf("Result: %.2f", multiply(number1,number2));
+                break;
 
-        case '^':
-            printf("Result: %.2f", power(number1,number2));
-            break;
-        
-        case '$':
-            printf("Result: %.2f", recursivePower(number1,number2));
-            break;
+            case '/':
+                printf("Result: %.2f", divide(number1,number2));
+                break;
 
-        default:
-            break;
+            case '^':
+                printf("Result: %.2f", power(number1,number2));
+                break;
+
+            case '$':
+                printf("Result: %.2f", recursivePower(number1,number2));
+                break;
+
+            default:
+                break;
         }
-    printf("\n");
+        printf("\n");
     } while (1);
 }
